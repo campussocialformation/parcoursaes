@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Mon projet de formation – DEAES</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">DEAES · Formation initiale · Référent de parcours</p>
+    <h1>Mon projet de formation</h1>
+    <p class="lead">Ce questionnaire t'aide à construire ton parcours de stages : tes envies, tes appréhensions, et les exigences du diplôme. Remplis-le, génère ton PDF, puis envoie-le à ton référent de parcours.</p>
+    <div class="privacy" role="note">
+      <strong>Confidentialité :</strong> rien n'est enregistré ni envoyé. Tes réponses restent uniquement dans cette page, sur ton appareil. Pas de nom demandé, pas de base de données, pas de cookie. Si tu fermes ou recharges la page, tout est effacé : pense à générer ton PDF avant.
+    </div>
+  </div>
+</header>
+
+<nav class="progress" aria-label="Progression">
+  <div class="wrap progress-inner">
+    <div class="bar"><span id="progressFill"></span></div>
+    <span id="progressText">0 / 10 rubriques</span>
+  </div>
+</nav>
+
+<main class="wrap">
+<form id="projet" autocomplete="off" novalidate>
+
+  <!-- 1 -->
+  <section class="card" data-section>
+    <h2><span class="num">1</span> Ma situation</h2>
+    <div class="field">
+      <span class="label">Mon statut</span>
+      <div class="chips" data-name="statut" data-single>
+        <label><input type="radio" name="statut" value="Formation initiale" checked> Formation initiale</label>
+        <label><input type="radio" name="statut" value="Transition professionnelle"> Transition professionnelle</label>
+      </div>
+      <p class="hint">En formation initiale : <strong>3 stages de 280 h</strong> (8 semaines chacun), soit <strong>840 h</strong> de formation pratique, sur <strong>3 terrains et 3 publics différents</strong>.</p>
+    </div>
+    <div class="field">
+      <label class="label" for="experience">Mes expériences auprès de personnes accompagnées (emploi, bénévolat, stage, aidant familial…)</label>
+      <textarea id="experience" name="experience" rows="3" placeholder="Ex. : 6 mois en EHPAD comme agent de service, aidant auprès d'un proche, animation en centre de loisirs…"></textarea>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="card" data-section>
+    <h2><span class="num">2</span> Ce que j'attends de mes stages</h2>
+    <div class="field">
+      <label class="label" for="decouvrir">Ce que je souhaite <u>découvrir</u> ou <u>apprendre</u> en stage</label>
+      <textarea id="decouvrir" name="decouvrir" rows="3"></textarea>
+    </div>
+    <div class="field">
+      <label class="label" for="approfondir">Ce que je souhaite <u>développer, approfondir</u> ou <u>perfectionner</u> en stage</label>
+      <textarea id="approfondir" name="approfondir" rows="3"></textarea>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="card" data-section>
+    <h2><span class="num">3</span> Mes qualités professionnelles</h2>
+    <div class="field">
+      <span class="label">Je me reconnais dans… <span class="muted">(plusieurs choix)</span></span>
+      <div class="chips" data-name="qualites">
+        <label><input type="checkbox" name="qualites" value="Écoute"> Écoute</label>
+        <label><input type="checkbox" name="qualites" value="Patience"> Patience</label>
+        <label><input type="checkbox" name="qualites" value="Bienveillance"> Bienveillance</label>
+        <label><input type="checkbox" name="qualites" value="Respect de la dignité"> Respect de la dignité</label>
+        <label><input type="checkbox" name="qualites" value="Discrétion"> Discrétion</label>
+        <label><input type="checkbox" name="qualites" value="Ponctualité, fiabilité"> Ponctualité, fiabilité</label>
+        <label><input type="checkbox" name="qualites" value="Adaptabilité"> Adaptabilité</label>
+        <label><input type="checkbox" name="qualites" value="Esprit d'équipe"> Esprit d'équipe</label>
+        <label><input type="checkbox" name="qualites" value="Créativité"> Créativité</label>
+        <label><input type="checkbox" name="qualites" value="Sens de l'observation"> Sens de l'observation</label>
+        <label><input type="checkbox" name="qualites" value="Calme"> Calme</label>
+        <label><input type="checkbox" name="qualites" value="Dynamisme"> Dynamisme</label>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="qualitesPrecisions">Un exemple concret qui montre une de ces qualités</label>
+      <textarea id="qualitesPrecisions" name="qualitesPrecisions" rows="3"></textarea>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="card" data-section>
+    <h2><span class="num">4</span> Mes objectifs</h2>
+    <div class="field">
+      <label class="label" for="objectifs">Quels objectifs puis-je me fixer ?</label>
+      <textarea id="objectifs" name="objectifs" rows="3" placeholder="Ex. : être à l'aise pour accompagner un repas en respectant le rythme de la personne"></textarea>
+    </div>
+    <div class="field">
+      <label class="label" for="realisables">Sont-ils réalisables ? Comment le saurai-je ?</label>
+      <textarea id="realisables" name="realisables" rows="2" placeholder="Délais, moyens, indicateurs, personnes ressources…"></textarea>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="card" data-section>
+    <h2><span class="num">5</span> Mes difficultés et freins actuels</h2>
+    <div class="field">
+      <span class="label">Ce qui peut compliquer mes stages <span class="muted">(plusieurs choix)</span></span>
+      <div class="chips" data-name="freins">
+        <label><input type="checkbox" name="freins" value="Transport / mobilité"> Transport / mobilité</label>
+        <label><input type="checkbox" name="freins" value="Horaires (matin tôt, soir, week-end)"> Horaires décalés</label>
+        <label><input type="checkbox" name="freins" value="Garde d'enfants / contraintes familiales"> Contraintes familiales</label>
+        <label><input type="checkbox" name="freins" value="Écrit / rédaction"> Écrit / rédaction</label>
+        <label><input type="checkbox" name="freins" value="Outils informatiques"> Outils informatiques</label>
+        <label><input type="checkbox" name="freins" value="Prise de parole / téléphone"> Prise de parole, téléphone</label>
+        <label><input type="checkbox" name="freins" value="Appréhension des soins d'hygiène"> Appréhension des soins d'hygiène</label>
+        <label><input type="checkbox" name="freins" value="Appréhension de certains publics"> Appréhension de certains publics</label>
+        <label><input type="checkbox" name="freins" value="Emploi à côté de la formation"> Emploi à côté</label>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="difficultes">J'identifie mes difficultés et freins</label>
+      <textarea id="difficultes" name="difficultes" rows="3"></textarea>
+    </div>
+    <div class="field">
+      <label class="label" for="pistes">Les pistes pour y remédier</label>
+      <textarea id="pistes" name="pistes" rows="3"></textarea>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="card" data-section>
+    <h2><span class="num">6</span> Publics et structures</h2>
+    <div class="field">
+      <span class="label">Les publics que je souhaite découvrir</span>
+      <div class="chips" data-name="publics">
+        <label><input type="checkbox" name="publics" value="Personnes âgées"> Personnes âgées</label>
+        <label><input type="checkbox" name="publics" value="Enfants en situation de handicap"> Enfants en situation de handicap</label>
+        <label><input type="checkbox" name="publics" value="Adultes en situation de handicap"> Adultes en situation de handicap</label>
+        <label><input type="checkbox" name="publics" value="Protection de l'enfance"> Protection de l'enfance</label>
+        <label><input type="checkbox" name="publics" value="Personnes à domicile"> Accompagnement à domicile</label>
+        <label><input type="checkbox" name="publics" value="Précarité / exclusion"> Précarité, exclusion</label>
+        <label><input type="checkbox" name="publics" value="Santé mentale / handicap psychique"> Handicap psychique</label>
+        <label><input type="checkbox" name="publics" value="Milieu scolaire (inclusion)"> Milieu scolaire (inclusion)</label>
+      </div>
+    </div>
+    <div class="field">
+      <span class="label">Les structures dans lesquelles je me projette</span>
+      <div class="chips" data-name="structures">
+        <label><input type="checkbox" name="structures" value="EHPAD"> EHPAD</label>
+        <label><input type="checkbox" name="structures" value="Résidence autonomie"> Résidence autonomie</label>
+        <label><input type="checkbox" name="structures" value="Foyer de vie"> Foyer de vie</label>
+        <label><input type="checkbox" name="structures" value="MAS"> MAS</label>
+        <label><input type="checkbox" name="structures" value="FAM"> FAM</label>
+        <label><input type="checkbox" name="structures" value="IME"> IME</label>
+        <label><input type="checkbox" name="structures" value="SAAD / service à domicile"> SAAD (domicile)</label>
+        <label><input type="checkbox" name="structures" value="MECS / foyer de l'enfance"> MECS, foyer de l'enfance</label>
+        <label><input type="checkbox" name="structures" value="CHRS / hébergement social"> CHRS, hébergement</label>
+        <label><input type="checkbox" name="structures" value="Établissement scolaire"> Établissement scolaire</label>
+        <label><input type="checkbox" name="structures" value="SAVS / SAMSAH"> SAVS, SAMSAH</label>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="apprehensions">Un public ou une structure qui m'inquiète, et pourquoi</label>
+      <textarea id="apprehensions" name="apprehensions" rows="2"></textarea>
+    </div>
+    <p class="hint warn">Non acceptés pour les stages AES : la <strong>petite enfance (0–3 ans)</strong> et le <strong>milieu carcéral</strong>.</p>
+  </section>
+
+  <!-- 7 -->
+  <section class="card" data-section>
+    <h2><span class="num">7</span> Mon parcours en 3 stages</h2>
+    <p class="hint">Chaque stage prépare un dossier et une soutenance. Un public et un terrain <strong>différents</strong> pour chaque stage.</p>
+
+    <div class="stages" id="stages"></div>
+    <div id="coherence" class="coherence" aria-live="polite"></div>
+  </section>
+
+  <!-- 8 -->
+  <section class="card" data-section>
+    <h2><span class="num">8</span> Compétences</h2>
+    <div class="field">
+      <label class="label" for="competences">Quelles compétences je souhaite acquérir en stage ?</label>
+      <textarea id="competences" name="competences" rows="3"></textarea>
+    </div>
+    <div class="field">
+      <span class="label">Où j'en suis aujourd'hui, bloc par bloc</span>
+      <p class="hint">1 = je découvre · 2 = j'ai des notions · 3 = je me sens à l'aise · 4 = je maîtrise</p>
+      <div class="scale" id="blocsScale"></div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="card" data-section>
+    <h2><span class="num">9</span> Ma recherche de stage</h2>
+    <div class="grid2">
+      <div class="field">
+        <span class="label">Mon CV</span>
+        <div class="chips" data-single>
+          <label><input type="radio" name="cv" value="À créer"> À créer</label>
+          <label><input type="radio" name="cv" value="À retravailler"> À retravailler</label>
+          <label><input type="radio" name="cv" value="Prêt"> Prêt</label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="label">Ma lettre de motivation</span>
+        <div class="chips" data-single>
+          <label><input type="radio" name="lm" value="À créer"> À créer</label>
+          <label><input type="radio" name="lm" value="À retravailler"> À retravailler</label>
+          <label><input type="radio" name="lm" value="Prête"> Prête</label>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="candidatures">Nombre de structures déjà contactées pour le stage 1</label>
+      <input type="number" id="candidatures" name="candidatures" min="0" max="200" inputmode="numeric" placeholder="0">
+    </div>
+    <div class="field">
+      <label class="label" for="besoinRP">Ce dont j'ai besoin de la part de mon référent de parcours</label>
+      <textarea id="besoinRP" name="besoinRP" rows="2" placeholder="Relecture du CV, entraînement à l'appel téléphonique, pistes d'établissements…"></textarea>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="card" data-section>
+    <h2><span class="num">10</span> Mes projections professionnelles</h2>
+    <div class="field">
+      <label class="label" for="avenir">Après le diplôme, je me vois…</label>
+      <textarea id="avenir" name="avenir" rows="3" placeholder="Public, type de structure, poursuite de formation (ME, ES…), dans 1 an, dans 5 ans…"></textarea>
+    </div>
+  </section>
+
+  <section class="card actions" id="actions">
+    <h2>Générer et envoyer</h2>
+    <ol class="steps">
+      <li><strong>Télécharge ton PDF</strong> (il s'enregistre sur ton appareil).</li>
+      <li><strong>Ouvre ton mail</strong> : le message est pré-rempli, il te reste à <strong>joindre le PDF</strong>.</li>
+    </ol>
+    <div class="btns">
+      <button type="button" class="btn primary" id="btnPdf">Télécharger mon PDF</button>
+      <a class="btn" id="btnMail" href="#">Ouvrir mon mail</a>
+      <button type="button" class="btn ghost" id="btnReset">Tout effacer</button>
+    </div>
+    <p class="hint" id="pdfStatus" aria-live="polite"></p>
+  </section>
+
+</form>
+</main>
+
+<footer class="foot">
+  <div class="wrap">IRTS · Filière AES · Outil sans collecte de données : tout reste sur ton appareil.</div>
+</footer>
+
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
