@@ -19,7 +19,7 @@ En haut de `script.js`, bloc `CONFIG` :
 
 - `emailReferent` : votre adresse professionnelle (pré-remplie dans le bouton « Ouvrir mon mail »).
 - `promotion` : libellé imprimé en tête du PDF.
-- `stages` : périodes, blocs et dates de soutenance (à mettre à jour chaque année).
+- `STATUTS` (juste en dessous) : obligations de stage affichées selon le statut choisi.
 
 ## Bon à savoir
 

@@ -13,11 +13,11 @@
 
 <header class="hero">
   <div class="wrap">
-    <p class="kicker">DEAES · Formation initiale · Référent de parcours</p>
+    <p class="kicker">DEAES · Référent de parcours</p>
     <h1>Mon projet de formation</h1>
-    <p class="lead">Ce questionnaire t'aide à construire ton parcours de stages : tes envies, tes appréhensions, et les exigences du diplôme. Remplis-le, génère ton PDF, puis envoie-le à ton référent de parcours.</p>
+    <p class="lead">Ce questionnaire vous aide à construire votre parcours de formation pratique : vos envies, vos appréhensions, vos objectifs. Remplissez-le, générez votre PDF, puis envoyez-le à votre référent de parcours.</p>
     <div class="privacy" role="note">
-      <strong>Confidentialité :</strong> rien n'est enregistré ni envoyé. Tes réponses restent uniquement dans cette page, sur ton appareil. Pas de nom demandé, pas de base de données, pas de cookie. Si tu fermes ou recharges la page, tout est effacé : pense à générer ton PDF avant.
+      <strong>Confidentialité :</strong> rien n'est enregistré ni envoyé. Vos réponses restent uniquement dans cette page, sur votre appareil. Pas de nom demandé, pas de base de données, pas de cookie. Si vous fermez ou rechargez la page, tout est effacé : pensez à générer votre PDF avant.
     </div>
   </div>
 </header>
@@ -25,7 +25,7 @@
 <nav class="progress" aria-label="Progression">
   <div class="wrap progress-inner">
     <div class="bar"><span id="progressFill"></span></div>
-    <span id="progressText">0 / 10 rubriques</span>
+    <span id="progressText">0 / 9 rubriques</span>
   </div>
 </nav>
 
@@ -34,40 +34,43 @@
 
   <!-- 1 -->
   <section class="card" data-section>
-    <h2><span class="num">1</span> Ma situation</h2>
+    <h2><span class="num">1</span> Votre situation</h2>
     <div class="field">
-      <span class="label">Mon statut</span>
-      <div class="chips" data-name="statut" data-single>
-        <label><input type="radio" name="statut" value="Formation initiale" checked> Formation initiale</label>
+      <span class="label">Votre statut</span>
+      <div class="chips" data-single>
+        <label><input type="radio" name="statut" value="Formation initiale"> Formation initiale</label>
+        <label><input type="radio" name="statut" value="En situation d'emploi"> En situation d'emploi</label>
+        <label><input type="radio" name="statut" value="Contrat de professionnalisation"> Contrat de professionnalisation</label>
+        <label><input type="radio" name="statut" value="Contrat d'apprentissage"> Contrat d'apprentissage</label>
         <label><input type="radio" name="statut" value="Transition professionnelle"> Transition professionnelle</label>
       </div>
-      <p class="hint">En formation initiale : <strong>3 stages de 280 h</strong> (8 semaines chacun), soit <strong>840 h</strong> de formation pratique, sur <strong>3 terrains et 3 publics différents</strong>.</p>
+      <p class="hint" id="statutHint">Sélectionnez votre statut pour afficher vos obligations de stage.</p>
     </div>
     <div class="field">
-      <label class="label" for="experience">Mes expériences auprès de personnes accompagnées (emploi, bénévolat, stage, aidant familial…)</label>
+      <label class="label" for="experience">Vos expériences auprès de personnes accompagnées (emploi, bénévolat, stage, aidant familial…)</label>
       <textarea id="experience" name="experience" rows="3" placeholder="Ex. : 6 mois en EHPAD comme agent de service, aidant auprès d'un proche, animation en centre de loisirs…"></textarea>
     </div>
   </section>
 
   <!-- 2 -->
   <section class="card" data-section>
-    <h2><span class="num">2</span> Ce que j'attends de mes stages</h2>
+    <h2><span class="num">2</span> Vos attentes en stage</h2>
     <div class="field">
-      <label class="label" for="decouvrir">Ce que je souhaite <u>découvrir</u> ou <u>apprendre</u> en stage</label>
+      <label class="label" for="decouvrir">Ce que vous souhaitez <u>découvrir</u> ou <u>apprendre</u> en stage</label>
       <textarea id="decouvrir" name="decouvrir" rows="3"></textarea>
     </div>
     <div class="field">
-      <label class="label" for="approfondir">Ce que je souhaite <u>développer, approfondir</u> ou <u>perfectionner</u> en stage</label>
+      <label class="label" for="approfondir">Ce que vous souhaitez <u>développer, approfondir</u> ou <u>perfectionner</u> en stage</label>
       <textarea id="approfondir" name="approfondir" rows="3"></textarea>
     </div>
   </section>
 
   <!-- 3 -->
   <section class="card" data-section>
-    <h2><span class="num">3</span> Mes qualités professionnelles</h2>
+    <h2><span class="num">3</span> Vos qualités professionnelles</h2>
     <div class="field">
-      <span class="label">Je me reconnais dans… <span class="muted">(plusieurs choix)</span></span>
-      <div class="chips" data-name="qualites">
+      <span class="label">Vous vous reconnaissez dans… <span class="muted">(plusieurs choix)</span></span>
+      <div class="chips">
         <label><input type="checkbox" name="qualites" value="Écoute"> Écoute</label>
         <label><input type="checkbox" name="qualites" value="Patience"> Patience</label>
         <label><input type="checkbox" name="qualites" value="Bienveillance"> Bienveillance</label>
@@ -83,30 +86,26 @@
       </div>
     </div>
     <div class="field">
-      <label class="label" for="qualitesPrecisions">Un exemple concret qui montre une de ces qualités</label>
+      <label class="label" for="qualitesPrecisions">Un exemple concret qui illustre l'une de ces qualités</label>
       <textarea id="qualitesPrecisions" name="qualitesPrecisions" rows="3"></textarea>
     </div>
   </section>
 
   <!-- 4 -->
   <section class="card" data-section>
-    <h2><span class="num">4</span> Mes objectifs</h2>
+    <h2><span class="num">4</span> Vos objectifs</h2>
     <div class="field">
-      <label class="label" for="objectifs">Quels objectifs puis-je me fixer ?</label>
-      <textarea id="objectifs" name="objectifs" rows="3" placeholder="Ex. : être à l'aise pour accompagner un repas en respectant le rythme de la personne"></textarea>
-    </div>
-    <div class="field">
-      <label class="label" for="realisables">Sont-ils réalisables ? Comment le saurai-je ?</label>
-      <textarea id="realisables" name="realisables" rows="2" placeholder="Délais, moyens, indicateurs, personnes ressources…"></textarea>
+      <label class="label" for="objectifs">Quels sont vos objectifs à court, moyen et long terme ?</label>
+      <textarea id="objectifs" name="objectifs" rows="5"></textarea>
     </div>
   </section>
 
   <!-- 5 -->
   <section class="card" data-section>
-    <h2><span class="num">5</span> Mes difficultés et freins actuels</h2>
+    <h2><span class="num">5</span> Vos difficultés et freins actuels</h2>
     <div class="field">
-      <span class="label">Ce qui peut compliquer mes stages <span class="muted">(plusieurs choix)</span></span>
-      <div class="chips" data-name="freins">
+      <span class="label">Ce qui peut compliquer vos stages <span class="muted">(plusieurs choix)</span></span>
+      <div class="chips">
         <label><input type="checkbox" name="freins" value="Transport / mobilité"> Transport / mobilité</label>
         <label><input type="checkbox" name="freins" value="Horaires (matin tôt, soir, week-end)"> Horaires décalés</label>
         <label><input type="checkbox" name="freins" value="Garde d'enfants / contraintes familiales"> Contraintes familiales</label>
@@ -115,11 +114,10 @@
         <label><input type="checkbox" name="freins" value="Prise de parole / téléphone"> Prise de parole, téléphone</label>
         <label><input type="checkbox" name="freins" value="Appréhension des soins d'hygiène"> Appréhension des soins d'hygiène</label>
         <label><input type="checkbox" name="freins" value="Appréhension de certains publics"> Appréhension de certains publics</label>
-        <label><input type="checkbox" name="freins" value="Emploi à côté de la formation"> Emploi à côté</label>
       </div>
     </div>
     <div class="field">
-      <label class="label" for="difficultes">J'identifie mes difficultés et freins</label>
+      <label class="label" for="difficultes">Les difficultés que vous identifiez</label>
       <textarea id="difficultes" name="difficultes" rows="3"></textarea>
     </div>
     <div class="field">
@@ -132,8 +130,8 @@
   <section class="card" data-section>
     <h2><span class="num">6</span> Publics et structures</h2>
     <div class="field">
-      <span class="label">Les publics que je souhaite découvrir</span>
-      <div class="chips" data-name="publics">
+      <span class="label">Les publics que vous souhaitez découvrir</span>
+      <div class="chips">
         <label><input type="checkbox" name="publics" value="Personnes âgées"> Personnes âgées</label>
         <label><input type="checkbox" name="publics" value="Enfants en situation de handicap"> Enfants en situation de handicap</label>
         <label><input type="checkbox" name="publics" value="Adultes en situation de handicap"> Adultes en situation de handicap</label>
@@ -145,8 +143,8 @@
       </div>
     </div>
     <div class="field">
-      <span class="label">Les structures dans lesquelles je me projette</span>
-      <div class="chips" data-name="structures">
+      <span class="label">Les structures dans lesquelles vous vous projetez</span>
+      <div class="chips">
         <label><input type="checkbox" name="structures" value="EHPAD"> EHPAD</label>
         <label><input type="checkbox" name="structures" value="Résidence autonomie"> Résidence autonomie</label>
         <label><input type="checkbox" name="structures" value="Foyer de vie"> Foyer de vie</label>
@@ -161,7 +159,7 @@
       </div>
     </div>
     <div class="field">
-      <label class="label" for="apprehensions">Un public ou une structure qui m'inquiète, et pourquoi</label>
+      <label class="label" for="apprehensions">Un public ou une structure qui suscite chez vous une appréhension, et pourquoi</label>
       <textarea id="apprehensions" name="apprehensions" rows="2"></textarea>
     </div>
     <p class="hint warn">Non acceptés pour les stages AES : la <strong>petite enfance (0–3 ans)</strong> et le <strong>milieu carcéral</strong>.</p>
@@ -169,33 +167,38 @@
 
   <!-- 7 -->
   <section class="card" data-section>
-    <h2><span class="num">7</span> Mon parcours en 3 stages</h2>
-    <p class="hint">Chaque stage prépare un dossier et une soutenance. Un public et un terrain <strong>différents</strong> pour chaque stage.</p>
-
-    <div class="stages" id="stages"></div>
-    <div id="coherence" class="coherence" aria-live="polite"></div>
+    <h2><span class="num">7</span> Compétences</h2>
+    <div class="field">
+      <span class="label">Les compétences que vous souhaitez développer en stage <span class="muted">(plusieurs choix)</span></span>
+      <div class="chips">
+        <label><input type="checkbox" name="competencesListe" value="Communiquer avec une personne qui s'exprime difficilement"> Communiquer avec une personne qui s'exprime difficilement</label>
+        <label><input type="checkbox" name="competencesListe" value="Accompagner la toilette dans le respect de l'intimité"> Accompagner la toilette dans le respect de l'intimité</label>
+        <label><input type="checkbox" name="competencesListe" value="Accompagner un repas"> Accompagner un repas</label>
+        <label><input type="checkbox" name="competencesListe" value="Aider aux déplacements et aux transferts"> Aider aux déplacements et aux transferts</label>
+        <label><input type="checkbox" name="competencesListe" value="Observer et repérer les besoins"> Observer et repérer les besoins</label>
+        <label><input type="checkbox" name="competencesListe" value="Rédiger des transmissions"> Rédiger des transmissions</label>
+        <label><input type="checkbox" name="competencesListe" value="Proposer et animer une activité"> Proposer et animer une activité</label>
+        <label><input type="checkbox" name="competencesListe" value="Favoriser l'autonomie de la personne"> Favoriser l'autonomie de la personne</label>
+        <label><input type="checkbox" name="competencesListe" value="Travailler en équipe"> Travailler en équipe</label>
+        <label><input type="checkbox" name="competencesListe" value="Échanger avec les familles et les aidants"> Échanger avec les familles et les aidants</label>
+        <label><input type="checkbox" name="competencesListe" value="Gérer une situation de tension"> Gérer une situation de tension</label>
+        <label><input type="checkbox" name="competencesListe" value="Prévenir les risques (chute, maltraitance…)"> Prévenir les risques (chute, maltraitance…)</label>
+        <label><input type="checkbox" name="competencesListe" value="Respecter le secret professionnel"> Respecter le secret professionnel</label>
+        <label><input type="checkbox" name="competencesListe" value="Accompagner dans les démarches du quotidien"> Accompagner dans les démarches du quotidien</label>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label" for="competences">D'autres compétences, ou des précisions</label>
+      <textarea id="competences" name="competences" rows="3"></textarea>
+    </div>
   </section>
 
   <!-- 8 -->
   <section class="card" data-section>
-    <h2><span class="num">8</span> Compétences</h2>
-    <div class="field">
-      <label class="label" for="competences">Quelles compétences je souhaite acquérir en stage ?</label>
-      <textarea id="competences" name="competences" rows="3"></textarea>
-    </div>
-    <div class="field">
-      <span class="label">Où j'en suis aujourd'hui, bloc par bloc</span>
-      <p class="hint">1 = je découvre · 2 = j'ai des notions · 3 = je me sens à l'aise · 4 = je maîtrise</p>
-      <div class="scale" id="blocsScale"></div>
-    </div>
-  </section>
-
-  <!-- 9 -->
-  <section class="card" data-section>
-    <h2><span class="num">9</span> Ma recherche de stage</h2>
+    <h2><span class="num">8</span> Votre recherche de stage</h2>
     <div class="grid2">
       <div class="field">
-        <span class="label">Mon CV</span>
+        <span class="label">Votre CV</span>
         <div class="chips" data-single>
           <label><input type="radio" name="cv" value="À créer"> À créer</label>
           <label><input type="radio" name="cv" value="À retravailler"> À retravailler</label>
@@ -203,7 +206,7 @@
         </div>
       </div>
       <div class="field">
-        <span class="label">Ma lettre de motivation</span>
+        <span class="label">Votre lettre de motivation</span>
         <div class="chips" data-single>
           <label><input type="radio" name="lm" value="À créer"> À créer</label>
           <label><input type="radio" name="lm" value="À retravailler"> À retravailler</label>
@@ -212,33 +215,33 @@
       </div>
     </div>
     <div class="field">
-      <label class="label" for="candidatures">Nombre de structures déjà contactées pour le stage 1</label>
+      <label class="label" for="candidatures">Nombre de structures déjà contactées pour votre prochain stage</label>
       <input type="number" id="candidatures" name="candidatures" min="0" max="200" inputmode="numeric" placeholder="0">
     </div>
     <div class="field">
-      <label class="label" for="besoinRP">Ce dont j'ai besoin de la part de mon référent de parcours</label>
+      <label class="label" for="besoinRP">Ce dont vous avez besoin de la part de votre référent de parcours</label>
       <textarea id="besoinRP" name="besoinRP" rows="2" placeholder="Relecture du CV, entraînement à l'appel téléphonique, pistes d'établissements…"></textarea>
     </div>
   </section>
 
-  <!-- 10 -->
+  <!-- 9 -->
   <section class="card" data-section>
-    <h2><span class="num">10</span> Mes projections professionnelles</h2>
+    <h2><span class="num">9</span> Vos projections professionnelles</h2>
     <div class="field">
-      <label class="label" for="avenir">Après le diplôme, je me vois…</label>
-      <textarea id="avenir" name="avenir" rows="3" placeholder="Public, type de structure, poursuite de formation (ME, ES…), dans 1 an, dans 5 ans…"></textarea>
+      <label class="label" for="avenir">Après le diplôme, comment vous projetez-vous ?</label>
+      <textarea id="avenir" name="avenir" rows="3" placeholder="Public, type de structure, poursuite de formation…"></textarea>
     </div>
   </section>
 
   <section class="card actions" id="actions">
     <h2>Générer et envoyer</h2>
     <ol class="steps">
-      <li><strong>Télécharge ton PDF</strong> (il s'enregistre sur ton appareil).</li>
-      <li><strong>Ouvre ton mail</strong> : le message est pré-rempli, il te reste à <strong>joindre le PDF</strong>.</li>
+      <li><strong>Téléchargez votre PDF</strong> (il s'enregistre sur votre appareil).</li>
+      <li><strong>Ouvrez votre messagerie</strong> : le message est pré-rempli, il vous reste à <strong>joindre le PDF</strong>.</li>
     </ol>
     <div class="btns">
       <button type="button" class="btn primary" id="btnPdf">Télécharger mon PDF</button>
-      <a class="btn" id="btnMail" href="#">Ouvrir mon mail</a>
+      <a class="btn" id="btnMail" href="#">Ouvrir ma messagerie</a>
       <button type="button" class="btn ghost" id="btnReset">Tout effacer</button>
     </div>
     <p class="hint" id="pdfStatus" aria-live="polite"></p>
@@ -248,7 +251,7 @@
 </main>
 
 <footer class="foot">
-  <div class="wrap">IRTS · Filière AES · Outil sans collecte de données : tout reste sur ton appareil.</div>
+  <div class="wrap">IRTS · Filière AES · Outil sans collecte de données : tout reste sur votre appareil.</div>
 </footer>
 
 <script src="vendor/jspdf.umd.min.js"></script>
